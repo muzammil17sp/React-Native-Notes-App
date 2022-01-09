@@ -19,10 +19,10 @@ const AddNote = ({ navigation }) => {
     }
     const checkValidation = (title, description, color) => {
         const error = {}
-        if (title === "" || /\s/.test(title)) {
+        if (title === "") {
             error.title = "Please  enter title"
         }
-        if (description === ""  || /\s/.test(description)) {
+        if (description === "") {
             error.description = "Please  enter description"
         } else if (description.length < 10) {
             error.description = "Description sholud be greater then 10 words lettters"
